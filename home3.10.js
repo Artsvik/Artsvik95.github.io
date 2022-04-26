@@ -26,8 +26,15 @@ let monthIndex = this.getMonth();
 let monthName = monthNames[monthIndex];
 
 let year = this.getFullYear();
-console.log(`${day} ${monthName},${year}`)
+
 
 function getToday() {
-    document.getElementById("now").innerHTML = Date()
+    let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    let day = this.getDate();
+
+    let monthIndex = this.getMonth();
+    let monthName = monthNames[monthIndex];
+
+    let year = this.getFullYear();
+    document.getElementById("now").innerHTML = `${day} ${monthName},${year}`
 }
