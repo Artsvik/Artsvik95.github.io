@@ -19,22 +19,14 @@ function getTheBulbOff() {
 }
 
 
-let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-let day = this.getDate();
-
-let monthIndex = this.getMonth();
-let monthName = monthNames[monthIndex];
-
-let year = this.getFullYear();
-
-
 function getToday() {
     let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    let day = this.getDate();
+    let now = new Date()
+    let day = now.getDate();
 
-    let monthIndex = this.getMonth();
+    let monthIndex = now.getMonth();
     let monthName = monthNames[monthIndex];
 
-    let year = this.getFullYear();
+    let year = now.getFullYear();
     document.getElementById("now").innerHTML = `${day} ${monthName},${year}`
 }
