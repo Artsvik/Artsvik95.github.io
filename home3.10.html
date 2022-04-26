@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home3.10.js">
+</head>
+
+<body>
+    <div id="box_1" onclick="getTheForm()">Մուտք
+        <button id="item_1"><i class="fa-solid fa-caret-down"></i></button>
+    </div>
+
+    <div class="enter">
+        <input type="text" name="" id="login" value="լոգին">
+        <input type="text" name="" id="login" value="գաղտնաբառ">
+        <input type="text" name="" id="login" value="օկ">
+    </div>
+    <style>
+        #box_1 {
+            width: 200px;
+            height: 50px;
+            margin: auto;
+            border: 1px solid;
+            text-align: center;
+        }
+
+        #item_1 {
+            width: 50px;
+            height: 20px;
+        }
+
+        .enter {
+            width: 200px;
+            height: 150px;
+            margin: auto;
+            margin-bottom: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(109, 109, 141);
+            background-color: rgb(171, 182, 204);
+        }
+
+        #login {
+            width: 150px;
+            height: 30px;
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+
+    <img id="img1" src="lightOn.png" alt="">
+    <button id="button" type="button" name="button" onclick="getTheBulbOn()">ON</button>
+    <button id="button2" type="button" name="button" onclick="getTheBulbOff()">OFF</button>
+
+    <br><br>
+    <button id="now" type="button" onclick="getToday()">Now</button>
+
+    <script src="home3.10.js"></script>
+</body>
+
+</html>
